@@ -1,0 +1,263 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #020203;
+  font-family: "Courgette", cursive;
+}
+
+header {
+  width: 100%;
+}
+
+header h2 {
+  font-size: 26px;
+  display: flex;
+  padding-left: 3.5%;
+  padding-top: 2%;
+}
+
+.logo {
+  height: 60px;
+  margin-right: 20%;
+}
+.card {
+  display: flex;
+}
+
+.card--left {
+  width: 50%;
+  padding-top: 8.5%;
+  padding-left: 5%;
+}
+
+.card--title,
+.card--desc {
+  display: flex;
+  text-align: justify;
+  line-height: 1.5;
+  word-spacing: 2px;
+}
+
+.card--desc {
+  font-size: 17px;
+}
+
+@keyframes rollIn {
+  0% {
+    transform: rotateX(360deg) translateX(100%);
+  }
+  100% {
+    transform: rotateY(0deg) translateX(0);
+  }
+}
+
+.card--motto {
+  position: absolute;
+  right: 40px;
+  padding-top: 3%;
+  padding-bottom: 0.5px;
+  animation: rollIn 3s forwards;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 17%;
+  width: 20%;
+  margin-top: 20px;
+  margin-bottom: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  color: rgba(254, 250, 224);
+  background-color: #7e9416;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #814725;
+}
+
+.main--title {
+  height: 36px;
+  left: 75px;
+  padding-top: 3.5%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #080c13;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  height: 622px;
+  width: 1904px;
+  left: 0px;
+  border-radius: 0px;
+  padding-top: 6.5%;
+  transform: translateX(0);
+}
+
+.left-arrow,
+.right-arrow {
+  position: absolute;
+  z-index: 1;
+  font-size: 30px;
+  top: 50%;
+  color: #977c4f;
+  padding: 4px 8px;
+  cursor: pointer;
+  user-select: none;
+  background-color: rgb(254, 250, 224);
+  opacity: 85%;
+  border-radius: 50%;
+  transition: background-color 0.3s ease-in-out;
+  
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+  background-color: rgb(188, 108, 37);
+  color: rgb(40, 54, 24);
+}
+
+.left-arrow {
+  left: 5%;
+}
+
+.right-arrow {
+  right: 5%;
+}
+
+.slide--img {
+  width: 800px;
+  height: 400px;
+  left: 80%;
+  top: 18px;
+}
+
+.slide h2 {
+  margin-top: 4.5%;
+}
+.slide h3,
+.slide h4,
+.slide p,
+.slide a {
+  margin: 5px 0;
+  margin-top: 0.5%;
+  font-size: 18px;
+}
+
+.slide p {
+  width: 95%;
+  margin-top: 14px;
+  margin-bottom: 15px;
+  margin-left: 30px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: justify;
+  line-height: 1.5;
+  word-spacing: 2px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.slide--map {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 12px;
+  text-decoration-line: underline;
+  color: #020203;
+}
+
+.slide--map:hover {
+  color: #502913;
+  font-size: 20px;
+}
+
+.form--container {
+  left: 500px;
+  top: 18px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: 800px;
+  height: fit-content;
+  background-color: #d0af84;
+  opacity: 85%;
+  padding: 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.form--input {
+  width: 100%;
+  margin-bottom: 20px;
+  margin: 30px;
+  padding-left: 20px;
+  height: 40px;
+  background: rgb(221, 161, 94);
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-radius: 99px;
+  box-shadow: inset 2px 5px 2px rgb(188, 108, 37);
+}
+
+.form--title {
+  width: 100%;
+  border: none;
+  padding: 0.5px;
+  font-family: "Courgette", cursive;
+  text-align: left;
+}
+
+.form--submit {
+  width: 50%;
+  margin-top: 20px;
+  margin-bottom: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  color: rgba(254, 250, 224);
+  background-color: #7e9416;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form--submit:hover {
+  background-color: #814725;
+}
+
+.form--img {
+  padding-top: 35px;
+  height: 24%;
+}
